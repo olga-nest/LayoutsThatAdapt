@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,17 +19,17 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="eGB-tX-adf">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J30-wv-9ia" userLabel="top view">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="368"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sun" translatesAutoresizingMaskIntoConstraints="NO" id="ldJ-Xh-sIi">
-                                        <rect key="frame" x="56" y="49.5" width="262.5" height="233"/>
+                                        <rect key="frame" x="62.666666666666657" y="54.666666666666657" width="290" height="257"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -41,9 +41,35 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bHD-Fd-bo7" userLabel="bottom view">
-                                <rect key="frame" x="0.0" y="333.5" width="375" height="333.5"/>
+                                <rect key="frame" x="0.0" y="368" width="414" height="368"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7TU-lo-aCW" userLabel="label view">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="184.66666666666666"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunny" textAlignment="center" lineBreakMode="tailTruncation" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="ABb-WQ-PNh">
+                                                <rect key="frame" x="8" y="0.0" width="398" height="184.66666666666666"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="400"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="ABb-WQ-PNh" secondAttribute="bottom" id="3VZ-7r-MIh"/>
+                                            <constraint firstItem="ABb-WQ-PNh" firstAttribute="top" secondItem="7TU-lo-aCW" secondAttribute="top" id="TJk-cA-RGg"/>
+                                            <constraint firstAttribute="trailing" secondItem="ABb-WQ-PNh" secondAttribute="trailing" constant="8" id="vvd-Yk-2Rt"/>
+                                            <constraint firstItem="ABb-WQ-PNh" firstAttribute="leading" secondItem="7TU-lo-aCW" secondAttribute="leading" constant="8" id="wId-Ub-riK"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="0.60049229452054798" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="7TU-lo-aCW" secondAttribute="trailing" id="OU3-Y1-J56"/>
+                                    <constraint firstItem="7TU-lo-aCW" firstAttribute="leading" secondItem="bHD-Fd-bo7" secondAttribute="leading" id="VPU-wb-3vl"/>
+                                    <constraint firstItem="7TU-lo-aCW" firstAttribute="top" secondItem="bHD-Fd-bo7" secondAttribute="top" id="eqo-IQ-LlE"/>
+                                    <constraint firstItem="7TU-lo-aCW" firstAttribute="height" secondItem="bHD-Fd-bo7" secondAttribute="height" multiplier="0.5" id="piT-aU-onO"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
