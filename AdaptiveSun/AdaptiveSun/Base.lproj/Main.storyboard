@@ -25,6 +25,21 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="eGB-tX-adf">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J30-wv-9ia" userLabel="top view">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sun" translatesAutoresizingMaskIntoConstraints="NO" id="ldJ-Xh-sIi">
+                                        <rect key="frame" x="56" y="49.5" width="262.5" height="233"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="ldJ-Xh-sIi" firstAttribute="centerY" secondItem="J30-wv-9ia" secondAttribute="centerY" id="5qW-77-21q"/>
+                                    <constraint firstItem="ldJ-Xh-sIi" firstAttribute="height" secondItem="J30-wv-9ia" secondAttribute="height" multiplier="0.7" id="AjR-Rd-AmL"/>
+                                    <constraint firstItem="ldJ-Xh-sIi" firstAttribute="width" secondItem="J30-wv-9ia" secondAttribute="width" multiplier="0.7" id="cl2-PY-Bci"/>
+                                    <constraint firstItem="ldJ-Xh-sIi" firstAttribute="centerX" secondItem="J30-wv-9ia" secondAttribute="centerX" id="ufb-CE-s7v"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bHD-Fd-bo7" userLabel="bottom view">
                                 <rect key="frame" x="0.0" y="333.5" width="375" height="333.5"/>
                                 <color key="backgroundColor" white="1" alpha="0.60049229452054798" colorSpace="calibratedWhite"/>
@@ -34,13 +49,17 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="bHD-Fd-bo7" firstAttribute="height" secondItem="eGB-tX-adf" secondAttribute="height" multiplier="0.5" id="5ff-1I-jsq"/>
+                            <constraint firstItem="J30-wv-9ia" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="C9r-lA-5G4"/>
+                            <constraint firstAttribute="trailing" secondItem="J30-wv-9ia" secondAttribute="trailing" id="HaO-sY-Pss"/>
                             <constraint firstAttribute="trailing" secondItem="bHD-Fd-bo7" secondAttribute="trailing" id="OgC-XN-0ne"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bHD-Fd-bo7" secondAttribute="bottom" id="QmU-5n-p7i"/>
                             <constraint firstAttribute="trailing" secondItem="eGB-tX-adf" secondAttribute="trailing" id="THc-fU-mkb"/>
                             <constraint firstItem="bHD-Fd-bo7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UAs-jh-Kd2"/>
                             <constraint firstItem="eGB-tX-adf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ant-lf-oHT"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eGB-tX-adf" secondAttribute="bottom" id="llY-JQ-Lmp"/>
+                            <constraint firstItem="J30-wv-9ia" firstAttribute="height" secondItem="eGB-tX-adf" secondAttribute="height" multiplier="0.5" id="oLb-QN-K3u"/>
                             <constraint firstItem="eGB-tX-adf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tY4-MH-wfl"/>
+                            <constraint firstItem="J30-wv-9ia" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="z49-bW-AZS"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -50,6 +69,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Sun" width="518" height="505"/>
         <image name="background" width="1280" height="480"/>
     </resources>
 </document>
